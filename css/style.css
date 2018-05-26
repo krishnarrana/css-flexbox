@@ -8,8 +8,8 @@ h1{
 	text-transform: uppercase;
 	padding: 30px;
 	text-align: center;
-	font-size: 32px;
-	color: #566270;
+	font-size: 48px;
+	color:  #2E294E;
 }
 p{
 	font-size: 18px;
@@ -23,9 +23,85 @@ p{
 	padding: 15px;
 }
 .item{
-	background: #566270;
+	background:  #2E294E;
 	color:#fff;
 	padding: 30px;
 	flex: 1 1 200px;
 	margin: 15px; 
+}
+.sub-title{
+	text-transform: uppercase;
+	padding: 30px;
+	text-align: center;
+	font-size: 28px;
+	color: #2E294E;
+}
+.holy-container{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100vh;
+	padding: 30px;
+}
+.holy-container p {
+	text-transform: uppercase;
+	font-size: 32px;
+	color: #fff;
+}
+.navbar a{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+.navbar{
+	background-color: #2E294E;
+	flex-basis: 100px;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.main-content{
+	background-color: #D7FFF1;
+	display: flex;
+	min-height: 800px;
+}
+.footer{
+	background-color: #2E294E;
+	min-height: 100px;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.article{
+	flex-basis: 60%;
+	background-color: pink;
+	color: #fff;
+	padding: 20px;
+	flex-grow: 1;
+}
+.aside{
+	flex-basis: 20%;
+	background-color: lightblue;
+	color: #fff;
+	padding: 20px;
+}
+.nav{
+	flex-basis: 20%;
+	background-color: #C5E99B;
+	order: -1;
+	color: #fff;
+	padding: 20px;
+}
+
+@media all and (max-width:640px){
+	.main-content{
+		flex-direction: column;
+	}
+	.nav{
+		order: 0;
+	}
 }
